@@ -12,5 +12,5 @@ RUN npm install
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY . /nodejs
 
-EXPOSE 8080
-CMD ["sh", "-c", "nginx && pm2-runtime start index.js -i max"]
+# EXPOSE 8080
+# CMD ["sh", "-c", "nginx && pm2-runtime start index.js -i max"]
